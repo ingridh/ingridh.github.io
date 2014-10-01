@@ -1,57 +1,189 @@
+@font-face {
+	font-family: 'edmondsans'; 
+	src: url('Edmondsans-Bold.otf') format('otf');
+}
+
+	
+#toplogo {
+	background-color: #76498E;
+	width: 80px;
+	height: 145px;
+	margin-left: 45px;
+	margin-top: 0;
+	padding-left: 6px;
+}
+
+#toplogo img {
+	width: 59px;
+	margin-left: 6px;
+	margin-top: 30px;
+}
 
 body {
-	font-family: "Lato", "Museo Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background: #5f5f5f;
-    display: block;
+	font-family: 'edmondsans', Helvetica, Arial, sans-serif;
+	background-color: #E2DEDE;
+	margin-top: 0;
 }
 
-p {
-	color: Snow;
-	margin-left: 20%;
-	margin-right: 20%;
-	/*font-size: 15px;*/
-	font-size: 1.3vw;
-	line-height:120%;
-	letter-spacing: 1px;
-	padding-bottom: 30px;
-
+#container {
+	margin-top: 20px;
 }
 
-a {
-	text-decoration: none;
-	color: White;
-	font-weight: bold;
+#header {
+	width: 720px;
+	height: 100px;
 }
 
-img {
-	max-width: 60%;
-	margin: 8% 0px 0px 20%;
+.title {
+	font-size: 2em;
+	font-weight: 600;
+	text-align: center;
 }
 
-#nav {
-	width: 100%;
-	margin: 0 0 1em 0;
-	padding: 0;
-	background-color: #e6e7e8;
-	border-bottom: 1px solid #ccc;
-	color: white;
-	float: right;
-	}
-#nav ul {
-	list-style: none;
-	margin: 0 auto;
-	padding: 0; }
-#nav li {
-	float: left; }
-#nav li a {
-	display: block;
-	padding: 8px 15px;
-	text-decoration: none;
-	font-weight: bold;
-	color: #069;
-	border-right: 1px solid #ccc; }
-#nav li:first-child a {
-	border-left: 1px solid #ccc; }
-#nav li a:hover {
-	color: #c00;
-	background-color: #fff; }
+#items {
+	width: 720px;
+    height: 360px;
+    left: calc(50% - 360px);
+    position: relative;
+}
+
+#subtitle {
+	text-align: center;
+	padding: 20px;
+	font-size: 1em;
+}
+
+#shirt{
+	position: absolute;
+    left: 275px;
+    top: 50px;
+}
+
+#shirt img {
+	width: 40%;
+}
+
+#iphone {
+	position: absolute;
+    top: 70px;
+    left: 485px;
+}
+
+#iphone img{
+	width: 35%;
+}
+
+.tooltip{
+    display: inline;
+    position: relative;
+}
+
+.tooltip:hover:after{
+    background: #333;
+    background: rgba(0,0,0,.8);
+    border-radius: 5px;
+    bottom: 50px;
+    color: #fff;
+    content: attr(text);
+    left: 20%;
+    padding: 4px 5px;
+    position: absolute;
+    z-index: 98;
+    width: 80px;
+    content: attr(text)
+}
+
+
+.tooltip:hover:before{
+    border: solid;
+    border-color: #333 transparent;
+    border-width: 6px 6px 0 6px;
+    bottom: 44px;
+    content: "";
+    left: 50%;
+    position: absolute;
+    z-index: 99;
+}
+
+#pens {
+	position: absolute;
+	left: 200px;
+    top: 60px;
+}
+#pens img {
+	width: 25%;
+}
+
+#laptop {
+    position: absolute;
+    left: 485px;
+    top: 120px;
+}
+#laptop img {
+    width: 240px;
+}
+
+#lstick {
+	position: absolute;
+	left: 583px;
+	top: 70px;
+}
+
+#lstick img {
+	width: 20px;
+}
+
+#polish {
+    position: absolute;
+    left: 612px;
+    top: 73px;
+}
+#polish img {
+    width: 30%;
+}
+
+#music {
+    position: absolute;
+    left: 645px;
+    top: 59px;
+}
+#music img {
+    width: 105px;
+}
+
+#titus {
+    position: absolute;
+    left: 135px;
+    top: 138px;
+}
+#titus img {
+    width: 114px;
+}
+
+#brain {
+    position: absolute;
+    z-index: -20;
+    left: 37px;
+    top: 61px;
+}
+#brain img {
+    width: 160px;
+}
+
+#drink {
+    position: absolute;
+    left: -50px;
+    top: 58px;
+}
+#drink img {
+    width: 25%;
+}
+
+#dance {
+    top: 210px;
+    left: -55px;
+    position: absolute;
+}
+#dance img {
+    width: 160px;
+}
