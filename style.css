@@ -1,72 +1,61 @@
 @font-face {
-	font-family: 'edmondsans'; 
-	src: url('Edmondsans-Bold.otf') format('otf');
+    font-family: 'edmondsans'; 
+    src: url('Edmondsans-Bold.otf') format('otf');
 }
-
-	
-#toplogo {
-	background-color: #76498E;
-	width: 80px;
-	height: 145px;
-	margin-left: 45px;
-	margin-top: 0;
-	padding-left: 6px;
-}
-
-#toplogo img {
-	width: 59px;
-	margin-left: 6px;
-	margin-top: 30px;
+html {
+    height: 100%;
 }
 
 body {
-	font-family: 'edmondsans', 'Lato', Helvetica, Arial, sans-serif;
-	background-color: #E2DEDE;
-	margin-top: 0;
+    font-family: 'edmondsans', 'Lato', Helvetica, Arial, sans-serif;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
 }
 
 #header {
-	width: 720px;
-	height: 100px;
+    width: 720px;
+    height: 100px;
 }
 
 .title {
-	font-size: 2em;
-	font-weight: 600;
-	text-align: center;
+    font-size: 2em;
+    font-weight: 600;
+    text-align: center;
 }
 
 #items {
-	width: 720px;
+    width: 720px;
     height: 360px;
     left: calc(50% - 360px);
     position: relative;
+    z-index: 2;
 }
 
 #subtitle {
-	text-align: center;
-	padding: 20px;
-	font-size: 1em;
+    text-align: center;
+    padding: 20px;
+    font-size: 1em;
 }
 
 #shirt{
-	position: absolute;
+    position: absolute;
     left: 275px;
     top: 50px;
 }
 
 #shirt img {
-	width: 40%;
+    width: 40%;
 }
 
 #iphone {
-	position: absolute;
+    position: absolute;
     top: 70px;
     left: 485px;
 }
 
 #iphone img{
-	width: 35%;
+    width: 35%;
 }
 
 .tooltip{
@@ -86,7 +75,6 @@ body {
     position: absolute;
     z-index: 98;
     width: 80px;
-    content: attr(text)
 }
 
 
@@ -102,12 +90,12 @@ body {
 }
 
 #pens {
-	position: absolute;
-	left: 200px;
+    position: absolute;
+    left: 200px;
     top: 60px;
 }
 #pens img {
-	width: 25%;
+    width: 25%;
 }
 
 #laptop {
@@ -120,13 +108,13 @@ body {
 }
 
 #lstick {
-	position: absolute;
-	left: 583px;
-	top: 70px;
+    position: absolute;
+    left: 583px;
+    top: 70px;
 }
 
 #lstick img {
-	width: 20px;
+    width: 20px;
 }
 
 #polish {
@@ -158,7 +146,7 @@ body {
 
 #brain {
     position: absolute;
-    z-index: -20;
+    z-index: -1;
     left: 37px;
     top: 61px;
 }
@@ -183,3 +171,84 @@ body {
 #dance img {
     width: 160px;
 }
+
+#sidebar {
+    position: absolute;
+    top: 0px;
+    background: #2D2C2C;
+    width: 300px;
+    height: 100%;
+    left: 0;
+    z-index: 0;
+}
+
+#sidebar #sidecontainer {
+    padding: 20px;
+    padding-right: 0;
+    padding-top: 0;
+    top: 0;
+    margin-top: 0;
+    padding-left: 0;
+}
+
+#sidebar #sidecontainer .sidebaritem {
+    color: white;
+    padding: 20px 0px 18px 25px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 10px;
+    margin-right: 0;
+    margin-left: 27px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+#sidebar #sidecontainer #topsidebar {
+    color: white;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    margin: 0;
+    padding: 40px 35px;
+    background: #834B9D;
+}
+
+#sidebar #sidecontainer .sidebaritem:hover, .sidebaritem:hover a {
+    background-color: #E0DEDE;
+    color: #2D2C2C;
+    width: 100%;
+}
+
+
+#toggle {
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 8px;
+    left: 20px;
+}
+
+.img-scaled {
+    width: 50px;
+}
+
+
+#content {
+    height: 100%;
+    width: 100%;
+    background-color: #E2DEDE;
+    position: fixed;
+    padding-top: 150px;
+    transition: ease-in-out 0.5s;
+    top: 0;
+    z-index: 2;
+    /* left: 10px;
+      if want to show sidebar a bit?*/
+  }
+
