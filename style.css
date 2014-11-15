@@ -7,6 +7,10 @@
 	font-family: 'Lato', Sans-Serif;
 	}
 
+body {
+		background-color: #e0e0e0;
+}
+
 .container {
 	display: block;
 }
@@ -14,8 +18,9 @@
 .landing {
 	position: fixed;
 	background: url('background.png');
-	background-size: cover;
+	background-size: contain;
 	height: 100%;
+	margin-top: 40px;
 	width: 100%;
 }
 
@@ -97,21 +102,21 @@ a{
 
 @media only screen and (max-width: 480px) {
     body {
-    	background-color: #e0e0e0;
-    	margin-top: 90px;
+    	background-color: white;
     }
 
     .landing {
     	position: fixed;
-		background: url('bw-background.png');
-		background-size: cover;
-		max-height: 250px;
+		background: url('vertical.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
     }
     .content {
     	padding: 40px;
     }
 
     .title {
+    	top: 12%;
     	
     }
   
