@@ -1,18 +1,16 @@
-<!DOCTYPE html>
-<html>
+<title>Ingrid Hong</title>
 <head>
-	<title>Ingrid Hong</title>
+	<!--favicon-->
 	<link rel="icon" type="image/png" href="images/favicon.ico" >
 
+	<!--stylesheets and links-->
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-	<script src="js/script.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+	<script language="Javascript" type="text/javascript" src="jquery-2.1.1.js"></script>
+	<script type="text/javascript" src="flowtype.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-
-
+	<!--tracker-->
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -23,46 +21,48 @@
 		ga('send', 'pageview');
 	</script>
 
+	
 </head>
+<script>
+	$(document).ready(function(){
+		$("body").flowtype({
+			minimum   : 300,
+			maximum   : 1200,
+			minFont   : 20,
+			maxFont   : 40,
+			fontRatio : 30
+		});
+		$(".infotext").flowtype({
+			minimum   : 300,
+			maximum   : 1200,
+			minFont   : 12,
+			maxFont   : 19,
+			fontRatio : 30
+		});
+	});
+</script>
 
 <body>
-	<div id="content">      
-		<div id="toggle"><img class="img-scaled" src="images/blacklogo.png" /></div>
-		<div class = 'title'>Hello! I'm Ingrid</div>
-		<div id = "subtitle">I'm currently revamping my website so check back soon! To contact me, click the phone below.</div>
+	<div class="container">
+		<div class="landing" id="landing">
 
-		<div id = "items">
-			<div id = "shirt"><img src = "images/icons/stripedshirt.png"></div>
-			<div id = "iphone"><a href="mailto:ingridhong@berkeley.edu" text="contact me" class="tooltip"><img src = "images/icons/iphone.png"></a></div>
+			<div class="title" id="title">
+				<h1>Hello! I'm Ingrid.</h1>
+			</div>
 
-
-			<div id ="pens"><img src = "images/icons/pens.png"></div>
-			<div id ="laptop"><img src = "images/icons/laptop.png"></div>
-			<div id ="lstick"><img src = "images/icons/lstick.png"></div>
-			<div id ="polish"><img src = "images/icons/polish.png"></div>
-			<div id ="music"><img src = "images/icons/music.png"></div>
-			<div id ="titus"><img src = "images/icons/english.png"></div>
-			<div id ="brain"><img src = "images/icons/cogs.png"></div>
-			<div id ="drink"><img src = "images/icons/boba.png"></div>
-			<div id ="dance"><img src = "images/icons/shoe.png"></div>
-
-		</div>   
-	</div>
-
-	<div id="sidebar">
-	 	<div id="sidecontainer">
-	 		<div id="topsidebar">LEARN MORE ABOUT ME</div>
-			<a href="/"><div class="sidebaritem">Home</div></a>
-			<div class="sidebaritem">About Me</div>
-			<a href="https://www.behance.net/ingridhong"><div class="sidebaritem">Graphic Design</div></a>
-			<div class="sidebaritem">Product Design</div>
-			<div class="sidebaritem">UI &amp; UX</div>
-			<div class="sidebaritem">Interests</div>
-			<div class="sidebaritem">Contact Me</div>
+			<div class="covers" id="cover">
+				<div class="cover1"></div>
+			</div>
 		</div>
+
+		<div class="content-container">
+			<div class="content">
+				<div class = "infotext"><b>Hi there! </b>I am a third year computer and cognitive science double major at UC Berkeley who's also minoring in English for an excuse to read books. I am passionate about designing products and interfaces to better people's lives, education, meeting new people, reading dystopian and fairytale retelling novels, striped shirts, and dance. I'm currently redesigning my site so everything still looks a bit drab. Meanwhile, you can shoot me an <a href="mailto:ingridhong@berkeley.edu"><b>email</b></a>, connect with on <a href="https://www.linkedin.com/in/ingridhong"><b>LinkedIn</b></a>, or find some of my design work on <a href="https://www.behance.net/ingridhong"><b>Behance</b></a>.</div>
+				
+			</div>
+		</div>
+
 	</div>
-
-
 </body>
-</html>
+
 
