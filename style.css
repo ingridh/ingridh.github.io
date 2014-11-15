@@ -8,7 +8,7 @@
 	}
 
 body {
-		background-color: #e0e0e0;
+		background-color: #e0dfe1;
 }
 
 .container {
@@ -23,10 +23,6 @@ body {
 	height: 100%;
 	margin-top: 40px;
 	width: 100%;
-}
-
-.covers {
-	opacity: 0;
 }
 
 .cover1 {
@@ -51,43 +47,24 @@ body {
 .title {
 	overflow: hidden;
 	position: absolute;
-	top: 15%;
+	top: 75%;
 	height: 150px;
 	width: 105%;
 	text-align: center;
 }
 
 h1 {
-	font-weight: 700;
-	color: #343434;
-	font-size: 1.1em;
-	font-family: 'Montserrat','Lato', sans-serif;
-}
-
-h2 {
-	margin: 20px 0px;
-	letter-spacing: 15px;
 	font-weight: 300;
-	color: #1bcaa7;
-	text-transform: uppercase;
-	font-size: 1.5em;
-}
-
-#shirt{
-    margin-left: 10%;
-    width: 40%;
-    margin-right: 40%;
-
-}
-
-#shirt img {
-	width: 55%;
+	color: #343434;
+	font-size: 0.8em;
+	font-family: 'Montserrat','Lato', sans-serif;
 }
 
 .infotext {
 	overflow: hidden;
-	margin-right: 8%;
 	text-align: center;
+	margin-left: 5%;
+	margin-right: 5%;
     position: relative;
     font-family: Lato;
     letter-spacing: 1px;
@@ -95,11 +72,10 @@ h2 {
     font-size: 20px;
 }
 
-a{
+a {
 	text-decoration: none;
 	color: black;
 }
-
 
 @media only screen and (max-width: 480px) {
     body {
