@@ -1,0 +1,151 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,700);
+
+/*general styling*/
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Lato', Sans-Serif;
+	}
+
+body {
+	color: white;
+}
+
+.container {
+	display: block;
+}
+
+.alltitles{
+	font-weight: bold;
+	font-size: 2.5em;
+}
+
+.landing {
+	position: absolute;
+	/*background: url('background.png');*/
+	background-color: #EA7972;
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 100%;
+	width: 100%;
+}
+
+.cover1 {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: #fff;
+}
+
+/*the top cover css*/
+.title {
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+	margin-top: 25%;
+}
+
+img.watch {
+	width: 45%;
+	margin-bottom: 18px;
+}
+
+#topbar {
+	margin: 3%;
+}
+
+#topbar h1 {
+	font-weight: bold;
+	font-size: 3.5em;
+	font-family:'Lato',Helvetica, sans-serif;
+}
+
+h3 {
+	font-size: 1.2em;
+	letter-spacing: 1px;
+	font-weight: 100;
+}
+
+#topcover p {
+	padding-left: 50%;
+}
+
+p#maintitle {
+	margin: 10% 35% 0 0;
+}
+
+p#subtitle {
+	font-size: 2em;
+	margin: 2% 0 0 0;
+}
+
+/*first cover*/
+.content-container {
+	position: absolute;
+	top: 100%;
+	display: block;
+	width: 100%;
+	background: #459e92;
+}
+
+.content {
+	padding: 100px 150px;
+}
+
+.infotext {
+	overflow: hidden;
+	text-align: center;
+	margin-left: 5%;
+	margin-right: 5%;
+    position: relative;
+    font-family: Lato;
+    letter-spacing: 1px;
+    line-height: 1.5em;
+    font-size: 20px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	cursor: pointer;
+
+}
+
+/*second cover*/
+.box {
+	width: 300px;
+	height: 300px;
+	background: #DCE2C7;
+	margin: 10px;
+	float: left;
+}
+
+#boxes {
+	margin-top:25%;
+	margin-left:16%;
+
+}
+
+
+/*responsive stuff*/
+@media only screen and (max-width: 600px) {
+    body {
+    	background-color: #EA7972;
+    }
+
+    .landing {
+    	position: fixed;
+		background: url('');
+		background-size: 100%;
+		background-repeat: no-repeat;
+    }
+    .content {
+    	padding: 40px;
+    }
+
+    .title {
+    	top: 12%;
+    	
+    }
+  
+}
