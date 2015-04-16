@@ -61,6 +61,7 @@ h3 {
 
 #topcover p {
 	padding-left: 50%;
+	position: relative
 }
 
 p#maintitle {
@@ -95,6 +96,8 @@ img.video {
     position: relative;
     font-size: 2em;
     margin-top: 2.5%;
+    padding: 50px;
+    width: 40%;
 }
 
 .infotext p {
@@ -105,11 +108,12 @@ a {
 	text-decoration: none;
 	color: black;
 	cursor: pointer;
+	z-index: 1000;
 }
 
 .infotext .caption {
 	float: right;
-	margin: 2% 0;
+	margin: 1% 0;
 	font-size: 0.8em;
 }
 
@@ -144,8 +148,7 @@ img.box {
 
 img.allthree{
 	position: relative ;
-	/*width: 276px;*/
-	width: 80%;
+	width: 70%;
 	margin-top: 5%;
 }
 
