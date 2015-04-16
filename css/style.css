@@ -13,6 +13,7 @@ body {
 
 .container {
 	display: block;
+	display: absolute;
 }
 
 .alltitles{
@@ -30,13 +31,6 @@ body {
 	width: 100%;
 }
 
-.cover1 {
-	position: fixed;
-	top: 0;
-	width: 100%;
-	background: #fff;
-}
-
 /*the top cover css*/
 .title {
 	overflow: hidden;
@@ -47,7 +41,6 @@ body {
 
 img.watch {
 	width: 45%;
-	margin-bottom: 18px;
 }
 
 #topbar {
@@ -71,7 +64,7 @@ h3 {
 }
 
 p#maintitle {
-	margin: 10% 35% 0 0;
+	margin: 10% 0 0 0;
 }
 
 p#subtitle {
@@ -95,7 +88,7 @@ img.video {
 }
 
 .content {
-	padding: 100px 150px;
+	padding: 100px 150px 0;
 }
 
 .infotext {
@@ -133,19 +126,27 @@ img.box {
 	margin-top: 5%;
 }
 
-.textbox{
-	width: 347px;
-	height: 70px;
+.textbox p{
+	width: 240px;
 	margin-top: 3%;
-	float: left;
-	margin-right: 21px;
+	float: right;
 	text-align: center;
 	font-size: 1em;
 	line-height: 1.4em;
-	margin-bottom:3%;
+	margin-bottom: 3%;
 }
 
 /* third section*/
 .section2 {
 	margin-top: 15%;
 }
+
+
+img.allthree{
+	position: relative ;
+	/*width: 276px;*/
+	width: 80%;
+	margin-top: 5%;
+}
+
+
