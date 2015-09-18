@@ -24,6 +24,7 @@ body {
 	height: 100%;
 /*	margin-top: 40px;
 */	width: 100%;
+	z-index: -1;
 }
 
 .cover1 {
@@ -42,9 +43,10 @@ body {
 
 .content {
 	padding: 80px 150px;
+	z-index: 100;
 }
 
-
+/*
 .title {
 	overflow: hidden;
 	position: absolute;
@@ -52,14 +54,13 @@ body {
 	height: 150px;
 	width: 105%;
 	text-align: center;
-}
+}*/
 
-h1 {
-/*	font-weight: 300;*/
+/*h1 {
 	color: #343434;
 	font-size: 3.0em;
 	font-family: 'Lato', sans-serif;
-}
+}*/
 
 .infotext {
 	overflow: hidden;
@@ -72,7 +73,6 @@ h1 {
     line-height: 1.5em;
     font-size: 20px;
 }
-
 a {
 	text-decoration: none;
 	color: black;
