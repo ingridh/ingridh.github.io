@@ -1,155 +1,155 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:300,700);
+.bigtitle {
+	font-family: 'Hammersmith One', Arial, sans-serif;
+	font-size: 40px;
+	text-align: right;
+	color: #FF5D5B;
+}
 
-/*general styling*/
-* {
-	margin: 0;
-	padding: 0;
-	font-family:'Lato',Helvetica, sans-serif;
+#lineintersect {
+	background-color: #FF5D5B;
+	position: relative;
+	width: 300px;
+	height: 16px;
+	margin-left: 70px;
+	top: -47px;
+	z-index: 1;
+}
 
+.name {
+	color: black;
+	position: relative;
+	z-index: 2;
+	line-height: 28pt;
 	}
 
-body {
-	color: white;
+.smalltitle {
+	font-family: 'Hammersmith One', Arial, sans-serif;
+	font-size: 20px;
+	text-align: right;
+	margin-bottom: -9px;
 }
 
-.container {
-	display: block;
-	display: absolute;
+.titlecolumn {
+	width: 400px;
+    padding: 30px;
+    position: fixed;
+    margin-left: 100px;
+    margin-top: 110px;
 }
 
-.alltitles{
-	font-weight: bold;
-	font-size: 2.5em;
+.smalltext {
+	font-family: 'Domine', georgia, times, serif;
+	text-align: justify;
 }
 
-.landing {
-	position: absolute;
-	/*background: url('background.png');*/
-	background-color: #EA7972;
-	background-repeat: no-repeat;
-	background-size: contain;
-	height: 100%;
-	width: 100%;
+.col-ms-6 {
+	background: #F8F8F8;
+	padding: 130px;
+	width: 800px;
+	margin: 30px 0;
 }
 
-/*the top cover css*/
-.title {
-	overflow: hidden;
-	position: absolute;
-	width: 100%;
-	margin-top: 25%;
+img.coverimg {
+	height: auto;
+	max-width: 800px;
 }
 
-img.watch {
-	width: 45%;
+img#logo {
+	position: fixed;
+	padding: 20px;	
 }
 
-#topbar {
-	margin: 3%;
-}
-
-#topbar h1 {
-	font-weight: bold;
-	font-size: 3.5em;
-}
-
-h3 {
-	font-size: 1.2em;
-	letter-spacing: 1px;
-	font-weight: 100;
-}
-
-#topcover p {
-	padding-left: 50%;
-	position: relative
-}
-
-p#maintitle {
-	margin: 10% 0 0 0;
-}
-
-p#subtitle {
-	font-size: 2em;
-	margin: 2% 0 0 0;
-	width: 30%;
-}
-
-/*first cover*/
-.content-container {
-	position: absolute;
-	top: 100%;
-	display: block;
-	width: 100%;
-	background: #459e92;
-}
-
-img.video {
-	position: relative;
+.work {
 	float: right;
-	width: 50%;
+	margin-top: 20px;
+	margin-bottom: 420px;
 }
 
-.content {
-	padding: 100px 150px 0;
+.bio {
+    width: 400px;
+    position: fixed;
+    bottom: 0;
+    padding: 30px;
+    margin-left: 100px;
+    height: 500px;
+    background-color: #F8F8F8;
+    z-index: 10;
 }
 
-.infotext {
-    position: relative;
-    font-size: 2em;
-    margin-top: 2.5%;
-    width: 40%;
-}
-
-.infotext p {
-	margin-bottom: 3%;
-}
-
-a {
-	text-decoration: none;
-	color: black;
-	cursor: pointer;
-	z-index: 1000;
-}
-
-.infotext .caption {
-	float: right;
-	margin: 1% 0;
-	font-size: 0.8em;
-}
-
-/*second cover*/
-
-
-#boxes {
-	margin-top: 5%;
-	width: 100%;
-}
-
-img.box {
-	width: 33%;
-	margin-top: 5%;
-}
-
-.textbox p{
-	width: 240px;
-	margin-top: 3%;
-	float: right;
+.footer {
 	text-align: center;
-	font-size: 1em;
-	line-height: 1.4em;
-	margin-bottom: 3%;
-}
-
-/* third section*/
-.section2 {
-	margin-top: 15%;
-}
-
-
-img.allthree{
-	position: relative ;
+	background-color: #FF5D5B;
+	padding: 7px;
+	position: fixed;
+	bottom: 0;
+	z-index: 5;
 	width: 100%;
-	margin-top: 5%;
 }
 
+.smalltitle, .bigtitle {
+   	transition:all .5s ease-in-out; 
+   	-o-transition:all .5s ease-in-out; 
+   	-moz-transition:all .5s ease-in-out; 
+   	-webkit-transition:all .5s ease-in-out;
+}
 
+/*.werk {
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    background: #aaa;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    display: none;
+}
+*/
+
+@media screen and (max-width: 1300px) {
+	.bio {
+		margin-left: 0;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	/*.bio {
+	    width: 800px;
+	    position: relative;
+	    padding: 30px;
+	    float: right;
+	    background-color: #F8F8F8;
+	    z-index: 10;
+	    margin-right: -13px;
+	}*/
+	.smalltitle {
+		font-size: 15px;
+		margin-bottom: -4px;
+	}
+	.bigtitle {
+		font-size: 35px;
+	}
+
+	.bio {
+		/*display: none;*/
+	}
+	.smalltext {
+		font-size: ;
+	}
+
+	}
+	.titlecolumn {
+		margin-left: 0px;
+		right: 0;
+	}
+}
+
+@media screen and (max-height: 710px) {
+	.titlecolumn {
+		right: 0;
+	}
+
+@media screen and (max-height: 500px) {
+	.bio {
+		display: none;
+	}
+}
