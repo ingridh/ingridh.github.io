@@ -59,10 +59,10 @@ img#logo {
 	padding: 20px;	
 }
 
-.work {
+#work {
 	float: right;
 	margin-top: 20px;
-	margin-bottom: 420px;
+	/*margin-bottom: 420 or device display + 520*/
 }
 
 .bio {
@@ -86,7 +86,7 @@ img#logo {
 	width: 100%;
 }
 
-.smalltitle, .bigtitle {
+.smalltitle, .bigtitle, .bio {
    	transition:all .5s ease-in-out; 
    	-o-transition:all .5s ease-in-out; 
    	-moz-transition:all .5s ease-in-out; 
@@ -111,7 +111,7 @@ img#logo {
 	}
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1114px) {
 	/*.bio {
 	    width: 800px;
 	    position: relative;
@@ -125,18 +125,15 @@ img#logo {
 		font-size: 15px;
 		margin-bottom: -4px;
 	}
+
 	.bigtitle {
 		font-size: 35px;
 	}
 
 	.bio {
-		/*display: none;*/
-	}
-	.smalltext {
-		font-size: ;
+		display: none;
 	}
 
-	}
 	.titlecolumn {
 		margin-left: 0px;
 		right: 0;
