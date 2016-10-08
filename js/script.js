@@ -1,6 +1,5 @@
 $( document ).ready(function() {
 	$(window).resize(function() {
-        console.log(window.innerHeight);
         document.getElementById(('work')).style.marginBottom = String(window.innerHeight-350) +'px';
     }).resize();
 
@@ -28,8 +27,6 @@ $( document ).ready(function() {
 
 	$(window).scroll(function(){
 	    var pos = $(this).scrollTop();
-	    //console.log('azimo ' + ($("#azimo").offset().top - $(window).scrollTop()));
-		//console.log('mongo ' + ($("#mongo").offset().top - $(window).scrollTop()));
 
 		if (($("#azimo").offset().top - $(window).scrollTop() < 100) && ($("#azimo").offset().top - $(window).scrollTop() > 0)) {
 			$('.smalltitle').text(subtitle[0]);
