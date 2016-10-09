@@ -11,7 +11,7 @@
 	width: 300px;
 	height: 16px;
 	margin-left: 70px;
-	top: -47px;
+	top: -37px;
 	z-index: 1;
 }
 
@@ -86,6 +86,10 @@ img#logo {
 	width: 100%;
 }
 
+#breakhere {
+	display: none;
+}
+
 .smalltitle, .bigtitle, .bio {
    	transition:all .5s ease-in-out; 
    	-o-transition:all .5s ease-in-out; 
@@ -109,7 +113,7 @@ img#logo {
 	width: 70%;
 }
 
-.mongoimage, .frogimage, .azimoimage, .contactimage{
+.mongoimage, .frogimage, .azimoimage, .contactimage, .droneimage, .karmaimage, .nextimage, .criticalimage{
 	z-index: 0;
 	position: absolute;
 	margin: 0;
@@ -123,7 +127,9 @@ img#logo {
 .contactimage {
 	left: inherit;
 }
-#azimo { 
+/*#azimo { 
+	background-color: #4fcac9;
+	background-image: url("data:image/svg+xml,%3Csvg width='12' height='16' viewBox='0 0 12 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 .99C4 .445 4.444 0 5 0c.552 0 1 .45 1 .99v4.02C6 5.555 5.556 6 5 6c-.552 0-1-.45-1-.99V.99zm6 8c0-.546.444-.99 1-.99.552 0 1 .45 1 .99v4.02c0 .546-.444.99-1 .99-.552 0-1-.45-1-.99V8.99z' fill='%23bdbdbd' fill-opacity='0.32' fill-rule='evenodd'/%3E%3C/svg%3E");
  }
 
 #mongo {
@@ -138,7 +144,7 @@ img#logo {
 #contact {
 	background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.32' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
 }
-
+*/
 @media screen and (max-width: 1300px) {
 	.bio, .titlecolumn {
 		margin-left: 0;
@@ -159,10 +165,26 @@ img#logo {
 	.smalltitle {
 		font-size: 15px;
 		margin-bottom: -4px;
+
+		background-color: white;
+    	color: black;
+    	display: inline-block;
+    	float: right;
+    	padding: 5px;
+    	border-style: solid;
+
 	}
 
-	.bigtitle {
+	.bigtitle.werk  {
 		font-size: 35px;
+
+		background-color: #ff5d5b;
+    	padding: 5px 9px;
+    	margin-top: 7px;
+    	color: white;
+    	display: inline-block;
+    	float: right;
+    	z-index: 0;
 	}
 
 	.bio {
@@ -172,11 +194,47 @@ img#logo {
 	.titlecolumn {
 		margin-left: 0px;
 		right: 0;
+		width: auto;
+	}
+
+	#breakhere {
+		display: block;
 	}
 }
 @media screen and (max-height: 710px) {
 	.titlecolumn {
+		margin-left: 0px;
 		right: 0;
+		width: auto;
+	}
+
+	#breakhere {
+		display: block;
+	}
+
+	.smalltitle {
+		font-size: 15px;
+		margin-bottom: -4px;
+
+		background-color: white;
+    	color: black;
+    	display: inline-block;
+    	float: right;
+    	padding: 5px;
+    	border-style: solid;
+
+	}
+
+	.bigtitle.werk {
+		font-size: 35px;
+
+		background-color: #ff5d5b;
+    	padding: 5px 9px;
+    	margin-top: 7px;
+    	color: white;
+    	display: inline-block;
+    	float: right;
+    	z-index: 0;
 	}
 
 @media screen and (max-height: 500px) {

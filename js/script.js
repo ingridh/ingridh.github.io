@@ -11,7 +11,6 @@ $( document ).ready(function() {
     'IoT with Samsung',
     'the NextDoor app',
     'digital devices',
-    'a laptop table',
     'keep designing'
 	];
 
@@ -52,17 +51,13 @@ $( document ).ready(function() {
 			$('.smalltitle').text(subtitle[3]);
 			$('.werk').text(titles[5]);
 		}
-		if  (($("#cmake").offset().top - $(window).scrollTop() < 100) && ($("#cmake").offset().top - $(window).scrollTop() > 0)) {
-			$('.smalltitle').text(subtitle[5]);
-			$('.werk').text(titles[6]);
-		}
-		if  (($("#lapshelf").offset().top - $(window).scrollTop() < 100) && ($("#lapshelf").offset().top - $(window).scrollTop() > 0)) {
-			$('.smalltitle').text(subtitle[5]);
-			$('.werk').text(titles[7]);
-		}
+		// if  (($("#cmake").offset().top - $(window).scrollTop() < 100) && ($("#cmake").offset().top - $(window).scrollTop() > 0)) {
+		// 	$('.smalltitle').text(subtitle[5]);
+		// 	$('.werk').text(titles[6]);
+		// }
 		if  (($("#contact").offset().top - $(window).scrollTop() < 100) && ($("#contact").offset().top - $(window).scrollTop() > 0)) {
 			$('.smalltitle').text(subtitle[6]);
-			$('.werk').text(titles[8]);
+			$('.werk').text(titles[7]);
 		} 
 	});
 
