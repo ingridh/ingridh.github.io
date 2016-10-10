@@ -95,7 +95,7 @@ img#logo {
     bottom: 0;
     padding: 30px;
     margin-left: 100px;
-    height: 500px;
+    height: auto;
     background-color: #F8F8F8;
     z-index: 10;
 }
@@ -193,6 +193,12 @@ img#logo {
 }
 
 @media screen and (max-width: 1300px) {
+	.bio, .titlecolumn {
+		margin-left: 40px;
+	}
+}
+
+@media screen and (max-width: 1240px) {
 	.bio, .titlecolumn {
 		margin-left: 0;
 	}
