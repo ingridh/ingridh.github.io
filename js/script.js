@@ -26,7 +26,6 @@ $( document ).ready(function() {
 
 	$(window).scroll(function(){
 	    var pos = $(this).scrollTop();
-
 		if (($("#azimo").offset().top - $(window).scrollTop() < 100) && ($("#azimo").offset().top - $(window).scrollTop() > 0)) {
 			$('.smalltitle').text(subtitle[0]);
 			$('.werk').text(titles[0]);
