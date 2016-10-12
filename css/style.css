@@ -1,6 +1,11 @@
 a {
 	text-decoration: none !important;
 }
+
+.row {
+	margin-right: 0 !important;
+}
+
 .bigtitle {
 	font-family: 'Hammersmith One', Arial, sans-serif;
 	font-size: 40px;
@@ -101,7 +106,7 @@ img#logo {
 }
 
 .footer {
-	text-align: center;
+	text-align: right;
 	background-color: #FF5D5B;
 	padding: 7px;
 	position: fixed;
@@ -204,7 +209,7 @@ img#logo {
 	}
 }
 
-@media screen and (max-width: 1190px) {
+@media screen and (max-width: 1200px) {
 
 	.smalltitle {
 		font-size: 15px;
@@ -314,5 +319,15 @@ img#logo {
 	img.contacticon {
 		width: 30px;
 	}
+
+	#work {
+		width: 100%;
+    	margin: 0 auto;
+	}
+
+	.col-ms-6 {
+		width: 100%;
+	}
+
 
 }
