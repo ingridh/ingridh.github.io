@@ -26,7 +26,15 @@
 	.workimg {
 		width: 100%;
     	height: auto;
-    	padding-bottom: 40px;
+    	/*padding-bottom: 40px;*/
+	}
+
+	#azimoimghere {
+		margin-top: -20px;
+	}
+
+	.mongomock {
+		margin-bottom: -50px;
 	}
 
 	#maincontent {
