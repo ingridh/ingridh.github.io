@@ -16,7 +16,7 @@ $( document ).ready(function() {
 	];
 
 	var subtitle = [
-	"I'm currently working at",
+	"I recently worked at",
 	"I worked at",
 	"I designed",
 	"I redesigned",

@@ -41,6 +41,21 @@
 		padding-top: 20px;
 	}
 
+	.lightc {
+		shadow: rgba(0, 0, 0, 0.2) 3px 3px 7px 0px;
+		box-shadow: rgba(0, 0, 0, 0.27) 0px 0px 5px;
+		margin: 15px 0 20px 0;
+	}
+
+	.ssk {
+		max-width: 70%;
+	}
+
+	#productnotes:hover {
+		content: url('../img/lightcapture/5productnotes.png');
+	
+	}
+
 /*	#imessageazimo:hover{
 		position: absolute;
 	    width: 100%;
