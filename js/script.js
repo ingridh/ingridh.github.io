@@ -6,11 +6,7 @@ $( document ).ready(function() {
 	var titles = [
     'Azimo',
     'MongoDB',
-    'frog Design',
-    'a drone app',
-    'IoT with Samsung',
-    'the NextDoor app',
-    'digital devices',
+    'lightcapture',
     'keep designing',
     ''
 	];
@@ -19,9 +15,6 @@ $( document ).ready(function() {
 	"I recently worked at",
 	"I worked at",
 	"I designed",
-	"I redesigned",
-	"I explored",
-	"I built",
 	"I would love to",
 	""
 	];
@@ -37,25 +30,13 @@ $( document ).ready(function() {
 			$('.werk').text(titles[1]);
 		} 
 		if  (($("#frog").offset().top - $(window).scrollTop() < 150) && ($("#frog").offset().top - $(window).scrollTop() > 0)) {
-			$('.smalltitle').text(subtitle[1]);
+			$('.smalltitle').text(subtitle[2]);
 			$('.werk').text(titles[2]);
 		}
-		if  (($("#cs160").offset().top - $(window).scrollTop() < 150) && ($("#cs160").offset().top - $(window).scrollTop() > 0)) {
-			$('.smalltitle').text(subtitle[2]);
+		if  (($("#contact").offset().top - $(window).scrollTop() < 150) && ($("#contact").offset().top - $(window).scrollTop() > 0)) {
+			$('.smalltitle').text(subtitle[3]);
 			$('.werk').text(titles[3]);
 		}
-		if  (($("#iot").offset().top - $(window).scrollTop() < 150) && ($("#iot").offset().top - $(window).scrollTop() > 0)) {
-			$('.smalltitle').text(subtitle[4]);
-			$('.werk').text(titles[4]);
-		}
-		if  (($("#nextdoor").offset().top - $(window).scrollTop() < 150) && ($("#nextdoor").offset().top - $(window).scrollTop() > 0)) {
-			$('.smalltitle').text(subtitle[3]);
-			$('.werk').text(titles[5]);
-		}
-		if  (($("#contact").offset().top - $(window).scrollTop() < 150) && ($("#contact").offset().top - $(window).scrollTop() > 0)) {
-			$('.smalltitle').text(subtitle[6]);
-			$('.werk').text(titles[7]);
-		}  
 		if  (($("#links").offset().top - $(window).scrollTop() < 250) && ($("#links").offset().top - $(window).scrollTop() > 0)) {
 			$('.smalltitle').hide();
 			$('.werk').hide();

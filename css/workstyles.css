@@ -1,7 +1,6 @@
 	img#logo {
-		position: relative;
-		top: 0;
-		padding: 15pt;
+		position: fixed;
+		padding: 20px;	
 		z-index: 3;
 	}
 
@@ -12,14 +11,15 @@
 	.topbar {
     	width: 100%;
     	z-index: 1000;
-    	background-color: white;
+    	/*background-color: white;*/
     	top: 0;
     	position: fixed;
     	left: 0;
-    	border-bottom: #f1f1f1 solid;
+    	/*border-bottom: #f1f1f1 solid;*/
 	}
 
 	body {
+		margin: 0px;
 	}
 
 	a {
@@ -56,14 +56,25 @@
 	
 	}
 
-/*	#imessageazimo:hover{
-		position: absolute;
-	    width: 100%;
-	    height: auto;
-	    left: 0;
-	    right: 0;
-	    padding-top: 50px;
-	}*/
+	.collapsible-header {  /*for azimo*/
+		font-family: 'Hammersmith One', Arial, sans-serif;
+		font-size: 15px;
+	}
+
+	.collapsible-header:hover, .collapsible-header.active {
+  		background-color: #FF5D5B;
+  		color: white;
+	}
+
+	#allazimowork {
+		max-width: 800px;
+		margin: 0 auto;
+    	font-family: 'Domine', georgia, times, serif;
+		font-size: 13px;
+		line-height: 18pt;
+		width: auto;
+		max-width: 800px;
+	}
 
 	.mongomock {
 		margin-bottom: -50px;
@@ -80,7 +91,7 @@
 		background-color: #FF5D5B;
 		color: white;
 		display: inline-block;
-		padding: 7px;
+		padding: 6px 14px;
 		margin-bottom: 10px;
 	}
 
@@ -101,7 +112,7 @@
 	}
 
 	.projtitle {
-		padding: 45px 45px 30px;
+		padding: 0px 45px 30px;
 		margin-top: 100px;
 	}
 
@@ -123,5 +134,5 @@
     	font-size: 12px;
     	color: #777777;
     	font-family: 'Hammersmith One', Arial, sans-serif;
-}
 	}
+}
