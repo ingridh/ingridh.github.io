@@ -226,7 +226,7 @@ img#logo {
 	}	
 
 	.bigtitle.werk  {
-		font-size: 35px;
+		font-size: 25pt;
 
 		background-color: #ff5d5b;
     	padding: 5px 9px;
@@ -244,13 +244,13 @@ img#logo {
 	#work {
 		width: 100%;
     	float: right;
+    	margin-bottom: 0px !important;
 	}
 
 	.col-ms-6 {
 		max-width: 100%;
 		/*float: left;*/
 	}
-
 
 	img.contacticon {
 		width: 30px;
@@ -289,7 +289,7 @@ img#logo {
 	}
 
 	.bigtitle.werk {
-		font-size: 35px;
+		font-size: 25pt
 
 		background-color: #ff5d5b;
     	padding: 5px 9px;
@@ -324,8 +324,4 @@ img#logo {
 	.col-ms-6 {
 		width: 100%;
 	}
-}
-
-@media screen and (max-width: 1450px) {
-
 }
