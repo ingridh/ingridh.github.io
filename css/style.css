@@ -226,7 +226,7 @@ img#logo {
 	}	
 
 	.bigtitle.werk  {
-		font-size: 25pt;
+		font-size: 30px;
 
 		background-color: #ff5d5b;
     	padding: 5px 9px;
@@ -266,6 +266,10 @@ img#logo {
 	}
 }
 @media screen and (max-height: 710px) {
+	#work {
+		margin-bottom: 0px !important;
+
+	}
 	.titlecolumn {
 		margin-left: 0px;
 		right: 0;
@@ -289,7 +293,7 @@ img#logo {
 	}
 
 	.bigtitle.werk {
-		font-size: 25pt
+		font-size: 30px;
 
 		background-color: #ff5d5b;
     	padding: 5px 9px;
