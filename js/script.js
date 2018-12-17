@@ -4,16 +4,16 @@ $( document ).ready(function() {
     }).resize();
 
 	var titles = [
+	'MongoDB',
     'Azimo',
-    'MongoDB',
     'lightcapture',
     'keep designing',
     ''
 	];
 
 	var subtitle = [
-	"I recently worked at",
-	"I interned at",
+	"Currently at",
+	"I worked at",
 	"I designed",
 	"I would love to",
 	""
@@ -21,15 +21,15 @@ $( document ).ready(function() {
 
 	$(window).scroll(function(){
 	    var pos = $(this).scrollTop();
-		if (($("#azimo").offset().top - $(window).scrollTop() < 150) && ($("#azimo").offset().top - $(window).scrollTop() > 0)) {
+		if (($("#mongo").offset().top - $(window).scrollTop() < 150) && ($("#mongo").offset().top - $(window).scrollTop() > 0)) {
 			$('.smalltitle').text(subtitle[0]);
 			$('.werk').text(titles[0]);
 		}
-		if  (($("#mongo").offset().top - $(window).scrollTop() < 150) && ($("#mongo").offset().top - $(window).scrollTop() > 0)) {
+		if  (($("#azimo").offset().top - $(window).scrollTop() < 150) && ($("#azimo").offset().top - $(window).scrollTop() > 0)) {
 			$('.smalltitle').text(subtitle[1]);
 			$('.werk').text(titles[1]);
 		} 
-		if  (($("#frog").offset().top - $(window).scrollTop() < 150) && ($("#frog").offset().top - $(window).scrollTop() > 0)) {
+		if  (($("#lightcapture").offset().top - $(window).scrollTop() < 150) && ($("#lightcapture").offset().top - $(window).scrollTop() > 0)) {
 			$('.smalltitle').text(subtitle[2]);
 			$('.werk').text(titles[2]);
 		}
