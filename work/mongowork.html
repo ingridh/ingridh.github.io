@@ -8,6 +8,7 @@
         type="text/javascript"></script>
         <link rel="icon" href="../img/logofavicon.png">
         <meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1.0"/>
+        <script src="js/script.js"></script>
 
 	</head>
 	<div class="topbar">
@@ -19,14 +20,14 @@
 		<div class="projtitle">
 			<div class="bigtitle">MongoDB</div>
 			<div class="smalltitle">Product Design - 2017 to Present</div>
-			<p class="subtitle">At <a href="https://www.mongodb.com/" target="_blank">MongoDB</a> I am currently supporting 3 engineering subteams under the Cloud team. Core, Monitoring (see our <a href="https://www.mongodb.com/blog/post/introducing-free-cloud-monitoring-for-mongodb" target="_blank">Free Monitoring</a> project launch), and Ops Manager. I've worked on a wide variety and multiple big and small projects. Here are some of the more recent ones from each team. </p>
+			<p class="subtitle">At <a href="https://www.mongodb.com/" target="_blank">MongoDB</a> I support 3 engineering subteams under the Cloud team. Core, Monitoring, and Ops Manager. I have worked on a wide variety and multiple big and small projects. Here are of two of the more recent ones. </p>
 
 			<p class="subtitle">I had previously interned at MongoDB in the summer of 2016. From looking at<a href="../work/mongointernwork.html"> my intern project</a> from the archives, I'm proud of how far I've come.</p>
 
 		</div>
 			<div class="containerproj">
-				<div class="smalltitle blacktitle">Core Team - API Keys</div>
-					<div class="bodysection">
+				<div class="smalltitle blacktitle"> 1 - Core Team - API Keys</div> 
+					<div class="bodysection" id="coreSection">
 					<p>This was a very big project so I’ve only included a portion of what went on below. Please feel free to contact me for further walkthrough or information regarding this project. </p>
 					<div class="smalltitle"> The Ask </div>
 						<p>In order to be more competitive in the database landscape as well as plan for future projects on the roadmap, MongoDB wanted to introduce the feature of API Keys to our Cloud system. </p>
@@ -83,6 +84,76 @@
 						<p> For future steps, I would like to evaluate if the introduction of this feature actually helped MongoDB become more competitive the market and determine how much this feature is used. This can be through data gathered over time on how many times users actually utilize this feature and whether they find value in it. Since this feature was only recently launched as of this post, I do not have these answers… yet! </p>
 				</div>
 			</div>
+
+			<div class="containerproj">
+				<div class="smalltitle blacktitle">2 - Monitoring Team - Free Monitoring</div>
+					<div class="bodysection" id="monitoringSection">
+						<div class="smalltitle"> The Ask </div>
+							<p> In February 2018, the team was approach with the proposal - a free version of our current Monitoring tool that can only be used by paying customers. This version should be more lightweight and be built from scratch to be launch at our annual world wide conference in June 2018. </p>
+
+							<p>This new product, dubbed appropriately ’Free Monitoring,’ was geared towards new users (database admins and developers) and users who haven’t used our existing Cloud platform before. Ideally, if users really enjoyed this product, we would then upsell them to pay for a more powerful version on the platform down the road. </p>
+
+						<div class="smalltitle"> Understanding the Space</div>
+							<img class="workimg" class="mongomock" src="../img/mongowork/monitoring-breakdown.png">
+							<p>Since we had an existing Monitoring product in place, I took a look at what we had and did some user research into our current user pain points. Breaking down the page here, we can see there are three main components to this product - a top navigation, the central grouping of charts, and the bottom navigation toggles. The main pain points included a very high learning curve for new users and an overwhelming amount of information bombarding the users at once.</p>
+
+							<img class="workimg" class="mongomock" src="../img/mongowork/designstudio.png">
+
+							<p> I also ran a <a href="https://docs.google.com/presentation/d/19skzMznoh3SAcGOkdOL5s4lID7XZJuC_LLxPn2dNKhY/edit?usp=sharing">design studio</a> (screenshot above) with stakeholders to get a sense of what they were imagining and thinking of which was really useful going in.  From the studio, the ideas generated revealed a need for 1) a good loading experience 2) some kind of incentive for the upsell and 3) consistent branding with our existing Monitoring tool. </p>
+
+						<div class="smalltitle"> Early Ideation</div>
+							<img class="workimg" class="mongomock" src="../img/mongowork/monitor-onboarding.png">
+							<p> The biggest con (and feature) of this new product we were offering was that data took 1-3 minutes to spin up which meant users won’t see any points plotted until the first minute and any line drawn until the 2-3 min mark. This challenge gave us the opportunity to surface information to the user during this wait time. I explored some onboarding experiences we can introduce during this time from teaching users how to build and add new charts to surfacing some static data and overview to the user first. </p>
+
+							<img class="workimg" class="mongomock" src="../img/mongowork/verticalalign.png">
+
+							<p> There was a need and ask for easier information digestibility for this product. In our existing system, all the charts were laid out side by side regardless of category. To match things up by time (which is the most natural way people looked to track their database health over time), they had to remember what time point they looked at then manually find that point again on another chart. To remedy this, I proposed a timeline horizontally stretched across charts of the same node. This allow people to get a sense quickly on was happening at the same point in time. </p>
+
+							<img class="workimg" class="mongomock" src="../img/mongowork/navigation.png">
+
+							<p> Navigation also needed a refresh since that was one reason users were getting overwhelmed. The fact we had a top and bottom navigation not to mention a different navigation UI for each confused many. Here I experimented with different ways and types of navigation possible. Ultimately we actually scrapped toggle completely for the MVP and just displayed all the charts (for now). </p>
+
+							<p> In terms of the charts and content to be displayed, I worked with the senior and lead engineers on the team who had the greatest understanding of were being used and which were important. This allowed us to cut down a lot of the extraneous charts and reduce the bulkiness of the product. If I had more time for this project, I would have definitely wanted to user test and done more research here though. I would have been more insightful to hear from the users themselves which charts specifically did they use or not use. </p>
+
+						<div class="smalltitle"> Testing and Iterations</div>
+							<p> Unfortunately due to the tight deadline, we didn’t get that much time to throughly user test with external users. However, I did get some data points and feedback from internal users as well consistently synced with stakeholders along the way. Ultimately, we had to greatly scope down the project - sadly we didn’t have time to build any of the onboarding, vertical alignment, and navigation. There was also the ask to display all the charts and nodes at once which meant a possibility of 5 charts across the page in one window. </p>
+
+							<img class="workimg" class="mongomock" src="../img/mongowork/blackandwhite.png">
+
+							<p> Two major things I did test and iterated on many times were the color of the charts and the tooltip hover for the key information on each chart. From user testing, we found out users actually prefer the dark charts: it made the product seem sleeker and ‘premium’ despite being a free product. </p>
+
+							<img class="workimg" class="mongomock" src="../img/mongowork/tooltip.png">
+
+							<p> The tooltip was a challenge that came up when the multi-chart ask came up. Originally, the key for a chart only came up on hover. this meant, if a user was not familiar with the colors, they did not know what each value and line meant until hover. We wanted to give the user to get information at a quick glance so we introduced an always present key. However, we also needed a tooltip to surface the exact number value on the chart. I played around with different types of hover types and did competitive research into this seemingly small interaction. </p>
+
+							<img class="workimg" class="mongomock" src="../img/mongowork/colorblindtest.png">
+
+							<p> There was also the challenge of accessibility. From user testing, we realized some of our current color spectrum was not easily distinguishable to someone who had specific types of color blindness. To remedy this, I worked closely with our product marketing/branding lead and this handy colorblind app to figure out which colors and in which order were more accessible. </p>
+
+						<div class="smalltitle"> Product Launch</div>
+
+							<p> We launched Free Monitoring at MongoDB World 2018! Big shoutout to the Monitoring engineering team who were super patient with me and also finished all the development in time. </p>
+
+							<img class="workimg" class="mongomock" src="../img/mongowork/fullscreen.gif">
+
+							<p> It was exciting to see something we worked so hard the past few months released into the wild. We also released a <a href="https://www.mongodb.com/blog/post/introducing-free-cloud-monitoring-for-mongodb">blog post</a> detailing product and how to use it. </p>
+
+						<div class="smalltitle"> Lessons and What Came Next</div>
+							<p> Since we had to scope this project way down, there were still a lot left on the to-do list. Some problems surfaced because of this naturally. For example, since there wasn’t an onboarding screen, we saw a large drop off rate once the user started their free monitoring. We hypothesized many users were either confused by the long loading state where they couldn’t see anything, or didn’t find value in the product (which we really didn’t want!) </p>
+
+							<p> Secondly, there was an issue with the display message that appeared in the terminal. We had to show a lot of text due to legal reasons, but didn’t offer a way for users to toggle it off. That was definitely on our list. </p>
+
+							<p> Finally, there was no way for the user to contact us for help. We ad hoc threw an email address (literally just the email in text) on the bottom of the page which a few people actually used but it was not ideal (both in the branding and usability standpoint). </p>
+
+							<img class="workimg" class="mongomock" src="../img/mongowork/onboarding.png">
+
+							<p> Following this project, we started on Free Monitoring v2 where I worked on the onboarding experience (preview above) and an experience for users to find resources and help. Please contact me for more information on this project if you’re interested! </p>
+
+							<p> I was really fortunately here to have worked with an amazing team that got along and worked together really well. Many, many thanks to everyone involved. </p>
+					</div>
+				</div>
+			</div>
+
 		</div>
 	</body>
 </html>
