@@ -147,8 +147,57 @@
     	font-family: 'Hammersmith One', Arial, sans-serif;
 	}
 
-	@media screen and (max-width: 1300px) {
-	.collapsible-header {
-		/*margin-left: 40px;*/
+	/*for tab navigation*/
+	button.tablinks {
+		font-family: 'Hammersmith One', Arial, sans-serif;
+		font-size: 17px;
+		border: none;
+    	cursor: pointer;
+    	padding: 0;
+    	margin: 0 15px -1.5px 0;
 	}
+
+	button:hover.tablinks {
+		color: #FF5D5B !important;
+	}
+
+	button.active.tablinks {
+		border-bottom: 2px #FF5D5B solid;
+		color: #FF5D5B !important;
+		padding: 0 0 2px 0;
+	}
+
+	.tab {
+		border-bottom: 1px lightgray solid;
+		margin-bottom: -10px;
+	}
+
+	a#top {
+    	display: block;
+    	position: relative;
+    	top: -30px;
+    	visibility: hidden;
+	}	
+
+	a#topButton {
+		float: right;
+		margin-top: -10px !important;
+	}
+
+	@media screen and (max-width: 565px) {
+
+		button.tablinks {
+			margin: 0 0 7px 0;
+		}
+
+		.tab {
+			border-bottom: none;
+		}
+
+		a#top {
+    		display: block;
+    		position: relative;
+    		top: -70px;
+    		visibility: hidden;
+		}
 }
