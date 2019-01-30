@@ -21,9 +21,7 @@
 				<div class="bigtitle">MongoDB</div>
 
 				<div class="smalltitle">Product Design - 2017 to Present</div>
-				<p class="subtitle">At <a href="https://www.mongodb.com/" target="_blank">MongoDB</a> I support 3 engineering subteams under the Cloud team. Core, Monitoring, and Ops Manager. I have worked on a wide variety and multiple big and small projects. Here are of two of the more recent ones. </p>
-
-				<p class="subtitle">I had previously interned at MongoDB in the summer of 2016. From looking at<a href="../work/mongointernwork.html"> my intern project</a> from the archives, I'm proud of how far I've come.
+				<p class="subtitle">At <a href="https://www.mongodb.com/" target="_blank">MongoDB</a> I solve complex technical problems by thinking and designing with intention in our end-to-end product experiences. I had previously interned at MongoDB in the summer of 2016. From looking at<a href="../work/mongointernwork.html"> my intern project</a> from the archives, I'm proud of how far I've come.
 				</p>
 
 			</div>
@@ -35,36 +33,30 @@
 		  			</div>
 
 						<div id="Core" class="tabcontent bodysection">
-							<p>This was a very big project so I’ve only included a portion of what went on below. Please feel free to contact me for further walkthrough or information regarding this project. </p>
 							<div class="smalltitle"> The Ask </div>
 								<p>In order to be more competitive in the database landscape as well as plan for future projects on the roadmap, MongoDB wanted to introduce the feature of API Keys to our Cloud system. </p>
 
-								<p>API Keys in this case refers to a set of one or more keys the admin of each organization can generate then give to his or her team members. Each key can have its own permissions and can also be logged so the admin can see how each keys used. Note: when this project was started, we originally all called it ‘Service Users’ so some early screenshots will show different naming - more of that to come.</p>
-
 							<div class="smalltitle"> Understanding the Problem </div>
-								<p>Before I dive into any project, I usually will start with understanding what is our current ecosystem (in terms of current technical restraints, design system constraints), who are our competitors and how have they tackled a similar problem, and what are the expectations of our stakeholders. In this project, I worked closely with the PM and the engineers (the lead of the team as well as the engineer directly tasked on writing the specs). </p>
-
-								<p> Here I brainstormed and outlined all the features we would need to include. I walked through the proposed feature list with the PM and the user flow with the engineer to make sure we were all on the same page.</p>
 
 								<img class="workimg" class="mongomock" src="../img/mongowork/pdd.png">
 
-								<p>In preparation of the project and to make sure everyone is aligned, at the start of a project, I wrote out a Product Design Document. This document, similar to when a Product Manager writes out a scope or an engineer with a spec, outlines the expectations from a design perspective as well as catalogs the progress and iterations of this project along the way. This creates more transparency between the me and the rest of the team. I also included all the User Research I did, analyzing how other competitors have tackled this same problem.</p>
+								<p>API Keys in this case refers to a set of one or more keys the admin of each organization can generate then give to his or her team members. Each key can have its own permissions and can also be logged so the admin can see how each keys used. Note: when this project was started, we originally all called it ‘Service Users’ so some early screenshots will show different naming - more of that to come.</p>
 
 							<div class="smalltitle"> Iterations </div>
-								<p>When starting to brainstorm the designs and working on early ideation, I focused on three features 1) How to display and list out the Service Users, 2) How to add new Service Users 3) How to edit Service Users. Here was the first and last iterations on the add/edit form. There were many changes from breaking up the form into a two step process to changing the scope entirely so we would just auto-generate a Public Key (formally called Unique Service User Name) for you. </p>
+								<p> I focused on three features 1) How to display and list out the Service Users, 2) How to add new Service Users 3) How to edit Service Users. Here was the first and last iterations on the add/edit form. There were many changes from breaking up the form into a two step process to changing the scope entirely so we would just auto-generate a Public Key (formally called Unique Service User Name) for you. </p>
 
 								<img class="workimg" class="mongomock" src="../img/mongowork/editform.png"> <!-- Original Edit Form -->
 
-								<p>Since this project was dubbed ’Service Users’ in the beginning, when I started working on the designs, I had the idea this would some how roll under our regular user list - easy peasy, right? However with closer investigation, I realized 1) the way users are displayed on the organization level vs the project level was totally different! 2) if we just appended our service users right under, it wasn’t super accessible or scalable 3) the naming conventions that made sense to us internally, seemed more and more confusing as I was trying to display it in an user friendly manner. </p>
+								<p>Since this project was dubbed ’Service Users’ in the beginning, there was the idea this would some how roll under our regular user list. However with closer investigation, I realized 1) the way users are displayed on the organization level vs the project level was totally different! 2) if we just appended our service users right under, it wasn’t super accessible or scalable 3) the naming conventions that made sense to us internally, seemed more and more confusing as I was trying to display it in an easily understable manner. </p>
 
 								<img class="workimg" class="mongomock" src="../img/mongowork/before.png"> 
 
 							<div class="smalltitle"> User Testing and Feedback </div>
-								<p> User testing is always my favorite part of the process since it puts everything in perspective and helps me understand what users are really seeing and feeling. For the first round of testing, I A/B tested the tab versus list format of displaying Service Users and quickly validated my hypothesis - the tab format was unanimously chosen over the list. Users explained its as easier to navigate and to see everything without scrolling. </p>
+								<p> For the first round of testing, I A/B tested the tab versus list format of displaying Service Users and quickly validated my hypothesis - the tab format was unanimously chosen over the list. Users explained its as easier to navigate and to see everything without scrolling. </p>
 
 								<img class="workimg" class="mongomock" src="../img/mongowork/abtesting.png">
 
-								<p>Something that also caused a lot of confusion was the name Console Users vs Service Users. All of us on the project (stakeholders, engineers, etc.) were all referring to the original users as Console Users while the new list as Service Users; however, no one I was testing on understood what was what these terms were at first glance. When they did click on it and saw the list or empty states, they could guess based on context but that was not what we were going for - we wanted these concepts to be understood intuitively.</p>
+								<p>Something that also caused a lot of confusion was the names Console Users vs Service Users that the stakeholders were using. However, no one I tested on understood what was what these terms were at first glance. When they did click on it and saw the list or empty states, they could guess based on context but that was not what we were going for - we wanted these concepts to be understood intuitively.</p>
 
 								<img class="workimg" class="mongomock" src="../img/mongowork/usertest.png"> 
 
@@ -72,28 +64,21 @@
 
 								<img class="workimg" class="mongomock" src="../img/mongowork/nav-iteration.png"> 
 
-								<p>After much debating, much testing, and many long meetings where we switched the copy and the entire IA of users/teams back and forth, we ended up putting everything under a new navigation category called ‘Access’ this included users, teams as well as the newly dubbed ‘API Keys.’ This felt more cohesive as these three things are were related to the level of access and permissions one could have within the organization or project. Also, we knew coming down the roadmap we had permission related projects that could also live under this newly created sections. </p>
-
-								<p>Copy ended up being a huge source of discussion with this project. Stakeholders had one idea, engineers had one idea, and I had backing from user testing and research that said another. We went through multiple rounds of this and ended up finally with the most intuitive - API Keys and Users. </p>
+								<p>After much debating, much testing, we ended up putting everything under a new navigation category called ‘Access’ this included users, teams as well as the newly dubbed ‘API Keys.’ This felt more cohesive as these three things are were related to the level of access and permissions one could have within the organization or project. Also, we knew coming down the roadmap we had permission related projects that could also live under this newly created sections. </p>
 
 							<div class="smalltitle"> Final Designs </div>
 								<p>Here is a quick gif preview of the final designs. As you see the tab and naming has been consolidated as well as a clearer flow when creating a new API Key:</p>
 
 								<img class="workimg" class="mongomock" src="../img/mongowork/coreproj.gif"> 
 
-							<div class="smalltitle"> Lesson and Future Steps </div>
-								<p>Because I learned copy was so important to stakeholders, I actually helped introduced a ‘Copy Document’ for future design processes. This was a document where designers bring to light all the screens that contain copy which needed to be reviewed. This allowed copy not being a blocker on design sign off which was great since this mean engineers could start on the the work as soon as possible and tweak the copy (easy changes) later. This also, allowed the focus when reviewing to be on the actual user experience and UI designs instead.</p>
-
-								<p>What I’ve also learned from this project was to make sure the stakeholders were all aligned constantly. Because this was such a huge project with many different stakeholder groups, I ended up actually meeting with few key stakeholders separately. For example, I would have more frequent alignment meetings with my engineering team so at least we were on the same page before we went to the higher ups since this project required signed off from the SVP of Engineering. If the whole team presented a more unified front, this allowed our major stakeholders to feel more confident in the proposed decisions as well. </p>
-
-								<p> Finally, it was important not only have a good process down but to provide others the transparency to your process. This project was originally planned (at least for design) to take only ~2-3 weeks. But because of the multiple back and forth with how we wanted to structure the IA, how the copy should be, etc. it took closer to a month. Ultimately, the extended time for design and for solidifying these details wasn’t a problem because all the stakeholders knew exactly what was going on and why it was taking longer than planned. </p>
-
+							<div class="smalltitle"> Future Steps </div>
 								<p> For future steps, I would like to evaluate if the introduction of this feature actually helped MongoDB become more competitive the market and determine how much this feature is used. This can be through data gathered over time on how many times users actually utilize this feature and whether they find value in it. Since this feature was only recently launched as of this post, I do not have these answers… yet! </p></div>
 						<div id="Monitoring" class="tabcontent bodysection">
 						<div class="smalltitle"> The Ask </div>
 							<p> In February 2018, the team was approach with the proposal - a free version of our current Monitoring tool that can only be used by paying customers. This version should be more lightweight and be built from scratch to be launch at our annual world wide conference in June 2018. </p>
 
-							<p>This new product, dubbed appropriately ’Free Monitoring,’ was geared towards new users (database admins and developers) and users who haven’t used our existing Cloud platform before. Ideally, if users really enjoyed this product, we would then upsell them to pay for a more powerful version on the platform down the road. </p>
+						<div class="smalltitle"> Target Users </div>
+							<p>This new product, dubbed appropriately ’Free Monitoring,’ was geared towards database admins and developers and users who haven’t used our existing Cloud platform before. Ideally, if users really enjoyed this product, we would then upsell them to pay for our enterprise product, a more powerful version on the platform, down the road. </p>
 
 						<div class="smalltitle"> Understanding the Space</div>
 							<img class="workimg" class="mongomock" src="../img/mongowork/monitoring-breakdown.png">
@@ -115,10 +100,8 @@
 
 							<p> Navigation also needed a refresh since that was one reason users were getting overwhelmed. The fact we had a top and bottom navigation not to mention a different navigation UI for each confused many. Here I experimented with different ways and types of navigation possible. Ultimately we actually scrapped toggle completely for the MVP and just displayed all the charts (for now). </p>
 
-							<p> In terms of the charts and content to be displayed, I worked with the senior and lead engineers on the team who had the greatest understanding of were being used and which were important. This allowed us to cut down a lot of the extraneous charts and reduce the bulkiness of the product. If I had more time for this project, I would have definitely wanted to user test and done more research here though. I would have been more insightful to hear from the users themselves which charts specifically did they use or not use. </p>
-
 						<div class="smalltitle"> Testing and Iterations</div>
-							<p> Unfortunately due to the tight deadline, we didn’t get that much time to throughly user test with external users. However, I did get some data points and feedback from internal users as well consistently synced with stakeholders along the way. Ultimately, we had to greatly scope down the project - sadly we didn’t have time to build any of the onboarding, vertical alignment, and navigation. There was also the ask to display all the charts and nodes at once which meant a possibility of 5 charts across the page in one window. </p>
+							<p> Since we had to greatly scope down the project - sadly we didn’t have time to build any of the onboarding, vertical alignment, and navigation. There was also the ask to display all the charts and nodes at once which meant a possibility of 5 charts across the page in one window. </p>
 
 							<img class="workimg" class="mongomock" src="../img/mongowork/blackandwhite.png">
 
@@ -126,32 +109,30 @@
 
 							<img class="workimg" class="mongomock" src="../img/mongowork/tooltip.png">
 
-							<p> The tooltip was a challenge that came up when the multi-chart ask came up. Originally, the key for a chart only came up on hover. this meant, if a user was not familiar with the colors, they did not know what each value and line meant until hover. We wanted to give the user to get information at a quick glance so we introduced an always present key. However, we also needed a tooltip to surface the exact number value on the chart. I played around with different types of hover types and did competitive research into this seemingly small interaction. </p>
+							<p> The tooltip was a challenge that came up stakeholders pushed for displaying 5 charts on the page at once. Originally, the key for a chart only appeared on hover. This meant, if a user was not familiar with the colors, they did not know what each value and line meant until hover. We wanted to give the user the ability to get information at a quick glance so we introduced an always present legend. However, we also needed a tooltip to surface the exact number value on the chart. I played around with different types of hover types and did competitive research into this seemingly small interaction that actually was the most crucial selling point of our graphs. </p>
 
 							<img class="workimg" class="mongomock" src="../img/mongowork/colorblindtest.png">
 
-							<p> There was also the challenge of accessibility. From user testing, we realized some of our current color spectrum was not easily distinguishable to someone who had specific types of color blindness. To remedy this, I worked closely with our product marketing/branding lead and this handy colorblind app to figure out which colors and in which order were more accessible. </p>
+							<p> There was also the challenge of accessibility. From user testing, we realized our current color spectrum was not easily distinguishable to someone who had specific types of color blindness. To remedy this, I worked closely with our product marketing/branding lead and used a colorblind effect app to figure out which colors and in which order were more accessible. </p>
 
 						<div class="smalltitle"> Product Launch</div>
 
-							<p> We launched Free Monitoring at MongoDB World 2018! Big shoutout to the Monitoring engineering team who were super patient with me and also finished all the development in time. </p>
+							<p> We launched Free Monitoring at MongoDB World 2018! Big shoutout to the Monitoring engineering team who were super patient with me and built all of this in time.</p>
 
 							<img class="workimg" class="mongomock" src="../img/mongowork/fullscreen.gif">
 
 							<p> It was exciting to see something we worked so hard the past few months released into the wild. We also released a <a href="https://www.mongodb.com/blog/post/introducing-free-cloud-monitoring-for-mongodb">blog post</a> detailing product and how to use it. </p>
 
 						<div class="smalltitle"> Lessons and What Came Next</div>
-							<p> Since we had to scope this project way down, there were still a lot left on the to-do list. Some problems surfaced because of this naturally. For example, since there wasn’t an onboarding screen, we saw a large drop off rate once the user started their free monitoring. We hypothesized many users were either confused by the long loading state where they couldn’t see anything, or didn’t find value in the product (which we really didn’t want!) </p>
+							<p> Since we had to scope this project way down, there were still a lot left on the to-do list - naturally, some problems surfaced because of this. For example, since there wasn’t an onboarding screen, we saw a large drop off rate once the user started up the product. We hypothesized many users were either confused by the long loading state where they couldn’t see anything, or didn’t find value in the product (which we really didn’t want!) </p>
 
 							<p> Secondly, there was an issue with the display message that appeared in the terminal. We had to show a lot of text due to legal reasons, but didn’t offer a way for users to toggle it off. That was definitely on our list. </p>
 
-							<p> Finally, there was no way for the user to contact us for help. We ad hoc threw an email address (literally just the email in text) on the bottom of the page which a few people actually used but it was not ideal (both in the branding and usability standpoint). </p>
+							<p> Finally, there was no way for the user to contact us for help. We ad hoc threw an email address (literally just the email in text form) on the bottom of the page which a few people actually used but it was not ideal (both in the branding and usability standpoint). </p>
 
 							<img class="workimg" class="mongomock" src="../img/mongowork/onboarding.png">
 
 							<p> Following this project, we started on Free Monitoring v2 where I worked on the onboarding experience (preview above) and an experience for users to find resources and help. Please contact me for more information on this project if you’re interested! </p>
-
-							<p> I was really fortunately here to have worked with an amazing team that got along and worked together really well. Many, many thanks to everyone involved. </p>
 						</div>
 					<a href="#top" class="smalltitle"id="topButton">Back to top</a>
 				</div>
